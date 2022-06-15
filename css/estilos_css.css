@@ -1,0 +1,188 @@
+.body{
+    background-color: black;
+    color: white;
+}
+.body2{
+    background-color: #d6d4d4;
+    color: #000;
+
+}
+header{
+    width: 100%;
+    height: 56px;
+    background-color: #000;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    text-decoration: none;
+    width: 1006px;
+    margin-left: 450px;
+    
+}
+.inicio-icon{
+    text-decoration: none;
+}
+.logo{
+    width: 185px;
+    height: 40px;
+}
+
+.menu-item{
+    clear: both;
+    z-index: 999;
+    font-family: "gothamHTFUltra";
+    color: #999;
+    text-decoration: none;
+    margin-left: 20px;
+    text-decoration: none;
+
+}
+.menu-icon{
+    margin-left: 30px;
+    font-size: 30px;
+}
+.carousel-peliculas{
+    margin-top: 30px;
+}
+.size-img{
+    margin-left: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1212px;
+    height: 362px;
+}
+.selector{
+    margin-top: 10px;
+    margin-left: 360px;
+    display: flex;
+    flex-direction: row;
+}
+.select-place-and-moovie{
+    height: 40px;
+    margin-right: 10px;
+    background-color: black;
+    color: #fff;
+    font-family: "GothamHTFUltra";
+    font-size: 12px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    padding-top:10px ;
+    padding-bottom: 10px;
+    border-width: 2px;
+    
+}
+.option{
+    list-style: none;
+    background-color: #1c1c1c;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 150px;
+    padding: 15px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 16px;
+    border-color: #fff;
+}
+.todas_peliculas{
+    margin-top: 20px;
+    margin-left: 360px;
+}
+.list_peliculas{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+
+}
+.pelicula{
+    margin-right: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 12px;
+}
+.imagen_pelicula{
+    width: 190px;
+    height: 285px;
+}
+.estreno{
+    font-family: "GothamHTFUltra";
+    text-transform: uppercase;
+    display: block;
+    font-size: 12px;
+    line-height: 14px;
+    color: #000;
+    background-color: #fff;
+    width: 100%;
+    text-align: center;
+}
+.login_br{
+    margin-top: 10px;
+    height: 65px;
+    background-color:gray ;
+    color: #d6d4d4;
+    font-size: 21px;
+    font-weight: 500px;
+    font-family: "GothamHTFUltra";
+    justify-items: center;
+    
+}
+.subtitulo{
+    font-size: 12px;
+    font-family: "GothamHTFLight";
+}
+.inicio-sesion{
+    width: 200px;
+    margin-top: 30px;
+    margin-left: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 5px;
+}
+.ingrese_datos{
+    height: 43px;
+    font-size: 12px;
+    font-family: "GothamHTFLight";
+    background: #fff;
+    border: 0;
+    padding: 0 14px;
+    background: #f8f8f8;
+    border-radius: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.login_button{
+    width: 200px;
+    height: 45px;
+    background-color: #000;
+    color: #fff;
+    font-family: "GothamHTFBlack";
+    text-transform: uppercase;
+    border: #000;
+    border-radius: 8px;
+}
+.ingrese_usuario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+.ingrese_contraseña{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+.olvido-usuario{
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+}
