@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/1185883879.js" crossorigin="anonymous"></script>
+    <script src="/stock.js"></script>
+    <script src="/app.js"></script>
+    <script src="/modal.js"></script>
+    <link rel="stylesheet" href="/css/estilos_css.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+    <body class="body">
+        <header>
+            <nav class="nav">
+                <a href="/index.html"> <img src="/imagenes/logo_cinemark.png" alt="logo de cinemark hoyts" class="logo"></a>
+                <div class="contenedor-de-menu">
+                    <a href="/html/peliculas" class="menu-item">PELICULAS</a>
+                    <a href="../html/candy.html" class="menu-item">CANDY</a>
+                    <a href="/html/peliculas" class="menu-item" >CINE FAN</a>
+                </div>
+                <div class="menu-icon">
+                    <a href="/html/" ></a> <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="/html/inicio_sesion.html" class="inicio-icon" ><i class="fa-solid fa-circle-user"></i></a>
+                </div>
+            </nav>
+        </header>
+        <section class="carousel-peliculas">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/imagenes/buzz_cartelera.jpg" class="size-img" alt="buzz lightyear pelicula">
+                </div>
+                <div class="carousel-item">
+                    <img src="/imagenes/cinefan.png" class="size-img" alt="publicidad cinefan">
+                </div>
+                <div class="carousel-item">
+                    <img src="/imagenes/jurassic_cartelera.jpg" class="size-img"  alt="jurassic world pelicula">
+                </div>
+                </div>
+            </div>
+        </section>
+        <div class="selector" >
+            <select placeholder="SELECCIONE UN CINE" class="select-place-and-moovie"> 
+                <option class="option">HOYTS MORENO</option>
+                <option class="option" >CINEMARK MENDOZA</option>
+                <option class="option" >CINEMARK MALVINAS ARGENTINAS</option>
+                <option class="option" >HOYTS DOT</option>
+                <option class="option" >CINEMARK CABALLITO</option>
+                <option class="option" >CINEMARK AVELLANEDA</option>
+                <option class="option" >HOYTS ABASTO</option>
+                <option class="option" >HOYTS MORON</option>
+                <option class="option" >CINEMARK NEUQUEN</option>
+                <option class="option" >HOYTS NUEVOCENTRO</option>
+                <option class="option" >HOYTS PALERMO</option>
+                <option class="option" >HOYTS PATIO OLMOS</option>
+                <option class="option" >CINEMARK PUERTO MADERO</option>
+                <option class="option" >HOYTS QUILMES</option>
+                <option class="option" >HOYTS ROSARIO</option>
+                <option class="option" >HOYTS SALTA</option>
+                <option class="option" >CINEMARK SAN JUSTO</option>
+                <option class="option" >CINEMARK SANTA FE</option>
+                <option class="option" >CINEMARK SOLEI</option>
+                <option class="option" >HOYTS TEMPERLEY</option>
+                <option class="option" >CINEMARK TORTUGAS</option>
+                <option class="option" >HOYTS UNICENTER</option>
+            </select>
+        </div>
+    <main id="contenedor-de-productos">
+        <div class="producto">
+            <img src="/imagenes/balde-pochoclo.png" alt="balde de pochoclos">
+            <h3>balde de pochoclos</h3>
+            <p class="precio-producto" >Precio: $590-</p>
+            <button class="boton-agregar">agregar</button>
+        </div>
+    </main>
+
+
+
+        <hr>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    </body>
+</html>
