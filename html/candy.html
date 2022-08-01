@@ -7,11 +7,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <title>Document</title>
     <script src="https://kit.fontawesome.com/1185883879.js" crossorigin="anonymous"></script>
-    <script defer src="../stock.js"></script>
     <script defer src="../modal.js"></script>
     <script defer src="../app.js"></script>
     <link rel="stylesheet" href="/css/estilos_css.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
     <body class="body-Candy">
         <header>
@@ -20,10 +21,11 @@
                 <div class="contenedor-de-menu">
                     <a href="/html/peliculas" class="menu-item">PELICULAS</a>
                     <a href="../html/candy.html" class="menu-item">CANDY</a>
-                    <a href="/html/peliculas" class="menu-item" >CINE FAN</a>
+                    
                 </div>
                 <div class="menu-icon">
-                    <a href="/html/" ></a> <i class="fa-solid fa-magnifying-glass"></i>
+                    <input id="busqueda" type="text" name="ingrese busqueda">
+                    <button id="btn-busqueda"> <i class="fa-solid busqueda-icon fa-magnifying-glass"></i></button>
                     <a href="/html/inicio_sesion.html" class="inicio-icon" ><i class="fa-solid fa-circle-user"></i></a>
                 </div>
             </nav>
@@ -48,55 +50,59 @@
                 </div>
             </div>
         </section>
-        <div class="selector" >
-            <select placeholder="SELECCIONE UN CINE" class="select-place-and-moovie"> 
-                <option class="option">HOYTS MORENO</option>
-                <option class="option" >CINEMARK MENDOZA</option>
-                <option class="option" >CINEMARK MALVINAS ARGENTINAS</option>
-                <option class="option" >HOYTS DOT</option>
-                <option class="option" >CINEMARK CABALLITO</option>
-                <option class="option" >CINEMARK AVELLANEDA</option>
-                <option class="option" >HOYTS ABASTO</option>
-                <option class="option" >HOYTS MORON</option>
-                <option class="option" >CINEMARK NEUQUEN</option>
-                <option class="option" >HOYTS NUEVOCENTRO</option>
-                <option class="option" >HOYTS PALERMO</option>
-                <option class="option" >HOYTS PATIO OLMOS</option>
-                <option class="option" >CINEMARK PUERTO MADERO</option>
-                <option class="option" >HOYTS QUILMES</option>
-                <option class="option" >HOYTS ROSARIO</option>
-                <option class="option" >HOYTS SALTA</option>
-                <option class="option" >CINEMARK SAN JUSTO</option>
-                <option class="option" >CINEMARK SANTA FE</option>
-                <option class="option" >CINEMARK SOLEI</option>
-                <option class="option" >HOYTS TEMPERLEY</option>
-                <option class="option" >CINEMARK TORTUGAS</option>
-                <option class="option" >HOYTS UNICENTER</option>
-            </select>
-        </div>
-    <main id="contenedor-de-productos">
-    </main>
-    <main>
-        <div class="modal-carrito">
-            <button id="boton-carrito"><i class="fa-solid fa-cart-shopping"></i><span id="contadorCarrito">0</span></button>
-            <h3>carrito</h3>
-            <button id="carrito-cerrar"><i class="fa-solid fa-circle-xmark"></i></button>
-            <div id = "carrito-contenedor">
-                <!-- <div class="producto-en-carrito">
-                    <p>blade de pochoclos</p>
-                    <p>precio: $590-</p>
-                    <button class="boton-eliminar"><i class="fa-solid fa-trash-can"></i></button>
-                </div> -->
+            <div class="selector" >
+                <select placeholder="SELECCIONE UN CINE" class="select-place-and-moovie"> 
+                    <option class="option">HOYTS MORENO</option>
+                    <option class="option" >CINEMARK MENDOZA</option>
+                    <option class="option" >CINEMARK MALVINAS ARGENTINAS</option>
+                    <option class="option" >HOYTS DOT</option>
+                    <option class="option" >CINEMARK CABALLITO</option>
+                    <option class="option" >CINEMARK AVELLANEDA</option>
+                    <option class="option" >HOYTS ABASTO</option>
+                    <option class="option" >HOYTS MORON</option>
+                    <option class="option" >CINEMARK NEUQUEN</option>
+                    <option class="option" >HOYTS NUEVOCENTRO</option>
+                    <option class="option" >HOYTS PALERMO</option>
+                    <option class="option" >HOYTS PATIO OLMOS</option>
+                    <option class="option" >CINEMARK PUERTO MADERO</option>
+                    <option class="option" >HOYTS QUILMES</option>
+                    <option class="option" >HOYTS ROSARIO</option>
+                    <option class="option" >HOYTS SALTA</option>
+                    <option class="option" >CINEMARK SAN JUSTO</option>
+                    <option class="option" >CINEMARK SANTA FE</option>
+                    <option class="option" >CINEMARK SOLEI</option>
+                    <option class="option" >HOYTS TEMPERLEY</option>
+                    <option class="option" >CINEMARK TORTUGAS</option>
+                    <option class="option" >HOYTS UNICENTER</option>
+                </select>
             </div>
-            <p class=""precio-producto> precio total: $<span id="precio-total"></span></p>
-            <button class="boton-eliminar" id="vaciar-carrito">vaciar carrito</button>
-        </div>
-
-    </main>
-
-
+            <section class="contenedor-general">
+                <div id="container-resultado"></div>
+                <main id="contenedor-de-productos">
+                    <div class="producto"></div>
+                </main>
+                <main>
+                    <div class="modal-carrito">
+                        <button class="boton-eliminar" id="vaciar-carrito">vaciar carrito</button>
+                        <button id="boton-carrito"><i class="fa-solid fa-cart-shopping"></i><span id="contadorCarrito">0</span></button>
+                        <h3>carrito</h3>
+                        <div id = "carrito-contenedor">
+                            <!-- <div class="producto-en-carrito">
+                                <p>blade de pochoclos</p>
+                                <p>precio: $590-</p>
+                                <button class="boton-eliminar"><i class="fa-solid fa-trash-can"></i></button>
+                            </div> -->
+                        </div>
+                        <p class="precio-producto"> precio total: $<span id="precio-total"></span></p>
+                    </div>
+                </main>
+            </section>>
 
         <hr>
+        <footer>
+
+        </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     </body>
 </html>

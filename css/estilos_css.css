@@ -7,6 +7,9 @@
     color: #000;
 
 }
+.body-login{
+    background-color: #d6d4d4;
+}
 header{
     width: 100%;
     height: 56px;
@@ -25,6 +28,10 @@ header{
 }
 .inicio-icon{
     text-decoration: none;
+    color: #fff;
+}
+.busqueda-icon{
+    color:#fff
 }
 .logo{
     width: 185px;
@@ -140,7 +147,7 @@ header{
 .inicio-sesion{
     width: 200px;
     margin-top: 30px;
-    margin-left: 350px;
+    margin-right: 150px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -192,4 +199,82 @@ header{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+.contenedor-inicio-sesion{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 150px;
+}
+.crear-usuario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.banner-login{
+    margin-bottom: 50px;
+    margin-left: 100px;
+
+}
+.modal-carrito{
+    background-color: #fff;
+}
+#btn-busqueda{
+    background-color: #000;
+}
+#busqueda{
+    background-color: #fff;
+    color: #000;
+    height: 50px;
+    font-size: 25px;
+    font-family: "GothamHTFLight";
+    border: 0;
+    border-color: #fff;
+    padding: 0 14px;
+    border-radius: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+#contenedor-de-productos{
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 50px;
+    margin-left: 300px;
+}
+.contenedor-general{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.modal-carrito{
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+    height: 100%;
+    width: 350px;
+    
+    
+}
+#container-resultado{
+    margin-left: 50px;
+}
+.producto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 260px;
+    width: 260px;
+    margin-right: 10px;
+    border: 1px solid;
+    border-color: #000;
 }

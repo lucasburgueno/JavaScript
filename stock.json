@@ -1,0 +1,11 @@
+[   {"id":1,"nombre":"Balde pochoclos","precio":590,"imagen":"/imagenes/balde-pochoclo.png"},
+    {"id":2,"nombre":"Bebida grande","precio":500,"imagen":"/imagenes/bbida-grande.png"},
+    {"id":3,"nombre":"Agua","precio":280,"imagen":"/imagenes/agua.png"},
+    {"id":4,"nombre":"Agua saborizada","precio":330,"imagen":"/imagenes/agua-saborizada.png"},
+    {"id":5,"nombre":"Pan de queso","precio":570,"imagen":"/imagenes/pan-de-queso.png"},
+    {"id":6,"nombre":"Nachos con queso","precio":640,"imagen":"/imagenes/nachos-con-queso.png"},
+    {"id":7,"nombre":"Gomitas haribo","precio":480,"imagen":"/imagenes/gomitas-haribo.png"},
+    {"id":8,"nombre":"Snickers","precio":450,"imagen":"/imagenes/snickers.png"},
+    {"id":9,"nombre":"Roclets grande","precio":840,"imagen":"/imagenes/roclets-grde.png"},
+    {"id":10,"nombre":"Skittles medianos","precio":450,"imagen":"/imagenes/skittles.png"}
+]
